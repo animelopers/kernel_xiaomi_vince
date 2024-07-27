@@ -1990,10 +1990,7 @@ SYSCALL_DEFINE4(epoll_ctl, int, epfd, int, op, int, fd,
 error_tgt_fput:
 	if (full_check) {
 		clear_tfile_check_list();
-<<<<<<< HEAD
-=======
 		loop_check_gen++;
->>>>>>> e8d2a090f7dd26f22b5982faeafb2441ccf1e858
 		mutex_unlock(&epmutex);
 	}
 
